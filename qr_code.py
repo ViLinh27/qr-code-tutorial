@@ -16,14 +16,18 @@ qr.make()
 
 qr.make_image()
 
-print('Enter a fill color for the qr code: ')
+print('Enter a fill color for the main qr code: ')
 userfill = input()
-print('Enter a back color forthe qr code (make sure the color constrasts with fill color): ')
+print('Enter a background color forthe qr code (make sure the color constrasts with fill color): ')
 userback = input()
 
 img = qr.make_image(fill_color=userfill, back_color=userback)
 
-img.save('user_qr.png')
+
+print('Enter a name for your qr code file: ')
+userfilename = input()
+
+img.save(f'{userfilename}.png')
 print('Your qr code has been made')
 
 # tutorial https://www.codedex.io/projects/generate-a-qr-code-with-python
