@@ -1,19 +1,29 @@
 import qrcode
 # pillow implicity imported
-eggdropsandwich_link = 'https://www.youtube.com/watch?v=ZsMkK98iZHg'
+print('Enter a website link to make into a qr code: ')
+
+#eggdropsandwich_link = 'https://www.youtube.com/watch?v=ZsMkK98iZHg'
+userlink = input()
+
 
 qr = qrcode.QRCode(version=1, box_size=5, border=5)
 # version: parameter controls size of QR code
 # box_size: controls how man pizels each box of QR code is
 # border: congtrols how many boxes thick border should be
 
-qr.add_data(eggdropsandwich_link)
+qr.add_data(userlink)
 qr.make()
 
 qr.make_image()
 
-img = qr.make_image(fill_color='green', back_color='yellow')
+print('Enter a fill color for the qr code: ')
+userfill = input()
+print('Enter a back color forthe qr code (make sure the color constrasts with fill color): ')
+userback = input()
 
-img.save('youtube_qr.png')
+img = qr.make_image(fill_color=userfill, back_color=userback)
+
+img.save('user_qr.png')
+print('Your qr code has been made')
 
 # tutorial https://www.codedex.io/projects/generate-a-qr-code-with-python
