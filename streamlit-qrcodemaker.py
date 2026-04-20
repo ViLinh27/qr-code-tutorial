@@ -113,6 +113,7 @@ st.markdown("Credits:")
 st.markdown("Andrew from hackernoon: https://hackernoon.com/how-to-instantly-create-a-front-end-for-your-python-program")
 st.markdown("Turtle Code on Youtube @turtlecode here: https://www.youtube.com/@turtlecode")
 st.markdown("Jerry Zhu's codedex.io tutorial here: https://www.codedex.io/projects/generate-a-qr-code-with-python")
+st.markdown("Rod Trent junk drawer qr code extra: https://github.com/rod-trent/JunkDrawer/blob/main/QR%20Code%20Extra/BuildQRCode.py")
 
 # streamlit qrcode tutorial https://youtu.be/ccbzvKcoaps?si=7uIdfRjsnZz6F6LC
 
